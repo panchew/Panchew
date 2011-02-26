@@ -1,0 +1,12 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+spec/fixtures/*.yml
+.idea
+.rvmrc
+config/database.yml
+config/tunnlr.yml
+coverage/*
+tmp/*
+
