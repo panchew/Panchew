@@ -8,8 +8,9 @@ gem 'rails', '3.0.3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'devise'
 gem 'haml-rails', '0.3.4'
-gem 'tropo-webapi-ruby'
+gem 'heroku'
 gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'tropo-webapi-ruby'
 # Use unicorn as the web server
 # gem 'unicorn'
 

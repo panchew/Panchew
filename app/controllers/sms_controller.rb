@@ -19,7 +19,6 @@ class SmsController < ApplicationController
   end
 
   def tropo_callback
-debugger
     sessions_object = Tropo::Generator.parse request.filtered_parameters
     msg = sessions_object[:session][:parameters][:msg]
     number_to_dial = sessions_object[:session][:parameters][:to]

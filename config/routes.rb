@@ -6,8 +6,8 @@ Panchew::Application.routes.draw do
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
-  post "sms/send_sms"
-  post "sms/tropo_callback"
+  post 'send_sms' => 'sms#send_sms'
+  post 'tropo_callback' => 'sms#tropo_callback'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
