@@ -1,16 +1,21 @@
 values: &values
   app_name: panchew
+
+development: &development
+  <<: *values
   tropo:
     app_id: 52432
     app_phone: 4086416746
     api_url: http://api.tropo.com
     token: 298a1c2b0c55144bb7ceef35dc1da032d18e86af26eb6bd81ca1b3113ee8725202ae7864f150060807a3d0ac
 
-development: &development
-  <<: *values
-
 test: &test
   <<: *values
 
 production: &production
   <<: *values
+  tropo:
+    app_id:
+    app_phone: 4157669123
+    api_url: http://api.tropo.com
+    token: 8b0f0047616dcd4d8cb9fd94e94a74ba4bfaf56d6945895d9d027b1878910300916a02bb0d55b9a172d974d9
